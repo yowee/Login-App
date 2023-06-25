@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#1C1B1B"
+    android:fitsSystemWindows="true"
+    tools:context=".Welcome">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--            Question-->
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvqn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/aclonica"
+                    android:padding="10dp"
+                    android:text="1 )"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/aclonica"
+                    android:padding="10dp"
+                    android:text="Which of the following is true about Kotlin's null safety?"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/design_default_color_error"
+                android:backgroundTint="@color/black" />
+
+            <!--            Answer-->
+            <RadioGroup
+                android:id="@+id/rg1a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RadioButton
+                    android:id="@+id/rbq1a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A) All variables in Kotlin are non-nullable by default." />
+
+                <RadioButton
+                    android:id="@+id/rbq1b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B) Kotlin does not support null values. " />
+
+                <RadioButton
+                    android:id="@+id/rbq1c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C) Kotlin uses the ? operator to make variables nullable. " />
+
+                <RadioButton
+                    android:id="@+id/rbqd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D) Kotlin does not have any mechanism for handling null values." />
+
+            </RadioGroup>
+
+
+
+
+<!--            Question2-->
+
+            <LinearLayout
+                android:id="@+id/llq2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvqn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/aclonica"
+                    android:padding="10dp"
+                    android:text="2 )"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/question2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/aclonica"
+                    android:padding="10dp"
+                    android:text="Which of the following statements regarding Kotlin's Coroutines is true?"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/design_default_color_error"
+                android:backgroundTint="@color/black" />
+
+            <!--            Answer-->
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RadioButton
+                    android:id="@+id/rbq2a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A) Coroutines are only applicable for Android development." />
+
+                <RadioButton
+                    android:id="@+id/rbq2b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B) Coroutines are used for multi-threading and parallelism." />
+
+                <RadioButton
+                    android:id="@+id/rbq2c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C) Coroutines require explicit management of thread pools." />
+
+                <RadioButton
+                    android:id="@+id/rbq2d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D) Coroutines are lightweight and facilitate asynchronous programming." />
+
+            </RadioGroup>
+
+
+            <!--            Question-->
+
+            <LinearLayout
+                android:id="@+id/llq3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvqn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/aclonica"
+                    android:padding="10dp"
+                    android:text="3 )"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/question3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/aclonica"
+                    android:padding="10dp"
+                    android:text="Which keyword is used to launch a coroutine in Kotlin?"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/design_default_color_error"
+                android:backgroundTint="@color/black" />
+
+            <!--            Answer-->
+            <RadioGroup
+                android:id="@+id/rg3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RadioButton
+                    android:id="@+id/rbq23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A) async" />
+
+                <RadioButton
+                    android:id="@+id/rbq3b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B) launch" />
+
+                <RadioButton
+                    android:id="@+id/rbq3c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C) runBlocking" />
+
+                <RadioButton
+                    android:id="@+id/rbq3d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D) suspend" />
+
+            </RadioGroup>
+
+
+            <!--            Question-->
+
+            <LinearLayout
+                android:id="@+id/llq4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvqn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/aclonica"
+                    android:padding="10dp"
+                    android:text="4 )"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/question4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/aclonica"
+                    android:padding="10dp"
+                    android:text="Which of the following best describes the concept of higher-order functions in Kotlin?"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/design_default_color_error"
+                android:backgroundTint="@color/black" />
+
+            <!--            Answer-->
+            <RadioGroup
+                android:id="@+id/rg4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RadioButton
+                    android:id="@+id/rbq24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A) Higher-order functions are functions that take in and return functions" />
+
+                <RadioButton
+                    android:id="@+id/rbq4b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B) Higher-order functions are functions that are defined within classes or objects." />
+
+                <RadioButton
+                    android:id="@+id/rbq4c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C) Higher-order functions are functions that have a higher execution priority than regular functions." />
+
+                <RadioButton
+                    android:id="@+id/rbq4d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D) Higher-order functions are functions that can only be invoked from within coroutines." />
+
+            </RadioGroup>
+
+
+            <!--            Question-->
+
+            <LinearLayout
+                android:id="@+id/llq5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvqn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/aclonica"
+                    android:padding="10dp"
+                    android:text="5 )"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/question5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/aclonica"
+                    android:padding="10dp"
+                    android:text="Which of the following is true regarding sealed classes in Kotlin?"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/design_default_color_error"
+                android:backgroundTint="@color/black" />
+
+            <!--            Answer-->
+            <RadioGroup
+                android:id="@+id/rg5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RadioButton
+                    android:id="@+id/rbq5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A) Sealed classes can be inherited by other classes." />
+
+                <RadioButton
+                    android:id="@+id/rbq5b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B) Sealed classes can only have private constructors." />
+
+                <RadioButton
+                    android:id="@+id/rbq5c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C) Sealed classes can be instantiated directly using the new keyword." />
+
+                <RadioButton
+                    android:id="@+id/rbq5d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D) Sealed classes can have both abstract and concrete members." />
+
+            </RadioGroup>
+
+
+
+            <!--            Question-->
+
+            <LinearLayout
+                android:id="@+id/llq6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvqn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/aclonica"
+                    android:padding="10dp"
+                    android:text="6 )"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/question6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/aclonica"
+                    android:padding="10dp"
+                    android:text="Which of the following are valid ways to create an instance of a Kotlin data class? (Select all that apply)"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/design_default_color_error"
+                android:backgroundTint="@color/black" />
+
+            <!--            Answer-->
+
+                <CheckBox
+                    android:id="@+id/rbq26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A) Using the new keyword: new Person(&quot;John&quot;, 25)" />
+
+                <CheckBox
+                    android:id="@+id/rbq6b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B) Using the constructor: Person(&quot;John&quot;, 25)" />
+
+                <CheckBox
+                    android:id="@+id/rbq6c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C) Using the copy() function: person.copy(name = &quot;Jane&quot;)" />
+
+                <CheckBox
+                    android:id="@+id/rbq6d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D) Using the init block: Person().apply { name = &quot;John&quot;; age = 25 }" />
+                <CheckBox
+                    android:id="@+id/rbq6e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D) Using object initialization: Person().also { it.name = &quot;John&quot;; it.age = 25 }" />
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="?android:attr/colorPressedHighlight"
+                android:fontFamily="@font/acme"
+                android:hapticFeedbackEnabled="false"
+                android:text="@string/submit"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="0dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
