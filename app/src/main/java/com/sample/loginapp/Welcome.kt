@@ -19,11 +19,11 @@ class Welcome : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
 
 
-        populateTest( createTest() )
+//        populateTest( createTest() )
 
     }
 
-    private fun createTest() : Test{
+/*    private fun createTest() : Test{
         var question1 = Question(1, "Which keyword is used to declare a constant variable in Kotlin?");
         var question2 = Question(2, "Which of the following is true about Kotlin's null safety?");
 
@@ -52,6 +52,6 @@ class Welcome : AppCompatActivity() {
 
         var tvQuestionNumber : TextView = findViewById(R.id.tvqn1)
         var question : TextView = findViewById(R.id.question)
-    }
+    }*/
 
 }
